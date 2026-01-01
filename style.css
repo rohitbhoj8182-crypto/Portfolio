@@ -1,0 +1,122 @@
+:root{
+    --color-primariy: #F5AFAF;
+    --color-secondriy: #F9DFDF;
+    --color-teritari: #FBEFEF;
+    --color-quatariy: #FBEFEF;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.page1{
+    background-color: aquamarine;
+    height: 100vh;
+    width: 100vw;
+}
+
+.page2{
+    background-color: rgb(15, 15, 193);
+    height: 100vh;
+    width: 100vw;
+}
+
+.page3{
+    background-color: rgb(186, 21, 118);
+    height: 100vh;
+    width: 100vw;
+}
+
+.page4{
+    background-color: rgb(215, 27, 61);
+    height: 100vh;
+    width: 100vw;
+}
+
+.top{
+   background-color: #F5AFAF;
+   background-image: url(/assest/top.jpeg);
+   height: 35%;
+}
+
+.bottom{
+    background-color: #F5AFAF;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav{
+    background-color: white;
+    height: 60px;
+    width: 90%;
+    border-radius: 20px 20px 20px 20px;
+    position: absolute;
+    top: 20px;
+    left: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    font-weight: 700;
+   
+    color: #e96767;
+}
+
+.nav .left{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 2rem;
+    
+}
+.nav .left img{
+    height: 5rem;
+}
+
+.nav .right{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav .rightmost{
+    background-color: #e96767;
+    border-radius: 10px 10px 10px 10px;
+    color: whitesmoke;
+}
+
+.board{
+    position: absolute;
+    left:40%;
+    top:18%;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #e96767;
+    
+}
+
+/* Working on Bottom part of our Page 1 */
+
+.bottom .circle{
+    height: 100%;
+    border-width: 45%;
+    background-color: aqua;
+
+}
+.bottom  .right{
+    height: 100%;
+   width: 45%;
+    background-color: black;
+}
+.parent{
+    height: 100%;
+    background-color: yellow;
+}
