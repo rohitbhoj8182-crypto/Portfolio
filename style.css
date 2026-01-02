@@ -48,8 +48,8 @@ html,body{
 }
 
 .bottom{
-    background-color: #F5AFAF;
-    height: 70%;
+    background-color: rgb(6, 6, 32);
+    height: 65%;
     display: flex;
     justify-content: space-between;
 }
@@ -68,7 +68,7 @@ html,body{
     font-size: 1.5rem;
     font-weight: 700;
    
-    color: #e96767;
+    color: #0b0b0b;
 }
 
 .nav .left{
@@ -76,21 +76,26 @@ html,body{
     gap: 1rem;
     align-items: center;
     font-size: 2rem;
+    color: orange;
     
 }
 .nav .left img{
     height: 5rem;
+    object-fit: fill;
 }
 
 .nav .right{
     display: flex;
     gap: 1.5rem;
+    color: black;
 }
 
 .nav .rightmost{
-    background-color: #e96767;
-    border-radius: 10px 10px 10px 10px;
-    color: whitesmoke;
+     border:solid 1px orange;
+    border-radius: 30px 30px 30px 30px;
+    padding: .5rem;
+    background-color: orange;
+    color: white;
 }
 
 .board{
@@ -99,24 +104,114 @@ html,body{
     top:18%;
     font-size: 4rem;
     font-weight: 800;
-    color: #e96767;
+    color: #f7f3f3;
+    text-shadow:
+    -1px -1px 0 orange,
+     1px -1px 0 orange,
+    -1px  1px 0 orange,
+     1px  1px 0 orange;
     
 }
 
 /* Working on Bottom part of our Page 1 */
 
-.bottom .circle{
+.bottom .left{
     height: 100%;
-    border-width: 45%;
-    background-color: aqua;
+    width: 50%;
+    
+}
+.bottom .right{
+    height: 100%;
+    width: 50%;
+   
+    display: flex;
+    color: azure;
+    flex-direction: column;
 
+   
 }
-.bottom  .right{
-    height: 100%;
-   width: 45%;
-    background-color: black;
+.bottom .left .circle{
+    height: 20rem;
+    width: 20rem;
+    background-color: #FBEFEF;
+    border-radius: 50%;
+    border: solid 10px orange;
+    position: absolute;
+    left: 15%;
+    bottom: 10%;
+    overflow: hidden;
 }
-.parent{
+
+.info{
+    width: 50%;
+    height: 70%;
+    display: grid;
+    background-color:rgb(3, 3, 40);
+    grid-template-columns: 1fr 1fr;  /* 2 columns */
+  grid-template-rows: 1fr 1fr;     /* 2 rows */
+  gap: 10px;
+  margin: 2rem;
+  font-size: 1.2rem;
+  padding: .5rem;
+  border: 20px 20px 20px 20px;
+    
+}
+
+.up button{
+    font-size: 1.5rem;
+    border:solid 1px orange;
+    border-radius: 30px 30px 30px 30px;
+    padding: .5rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+
+#head{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-top: .5rem;
+    
+}
+
+#light{
+    margin-left: 2rem;
+    margin-top: .5rem;
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+
+.info div{
+    margin-left: .5rem;
+    opacity: 1;
+}
+.info div h2{
+    color: orange;
+   
+}
+
+#Download{
+     font-size: 1.5rem;
+    border:solid 1px orange;
+    border-radius: 30px 30px 30px 30px;
+    padding: .5rem;
+    
+    margin-left: 2rem;
+}
+#Contact{
+    font-size: 1.5rem;
+    border:solid 1px orange;
+    border-radius: 30px 30px 30px 30px;
+    padding: .5rem;
+    background-color: orange;
+    color: white;
+    
+    margin-left: 2rem; 
+}
+
+.circle img{
+    object-fit: cover;
     height: 100%;
-    background-color: yellow;
+    width: 100%;
+    object-position: bottom;
 }
